@@ -7,7 +7,7 @@ const Covid = () => {
 
     const getCovidData = async () => {
         try {
-            const res = await fetch("https://api.covid19india.org/data.json");
+            const res = await fetch(process.env.REACT_APP_COVID_TRACKER_API);
             const actualData = await res.json();
             console.log(actualData.statewise[0]);
             setData(actualData.statewise[0]);
