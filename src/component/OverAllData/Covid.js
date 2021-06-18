@@ -47,9 +47,9 @@ const Covid = () => {
                           <p className="card_name"><span>TOTAL</span>CONFIRMED</p>
                           <p className="carda_total card_small">{data.confirmed}</p>
                   </div>
-                </div>
+        
               
-                <div className="card_main">
+               
                   <div className="card_inner">
                           <p className="card_name"><span>TOTAL</span>DEATH</p>
                           <p className="carda_total card_small">{data.deaths}</p>

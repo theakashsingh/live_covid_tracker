@@ -1,78 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    width: 100%;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    color: #555;
-    background: #ecf0f3;
-    
+  height: 100vh;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: #555;
+  background: #ecf0f3;
 }
 
-h1{
-    font-size: medium;
-    text-align: center;
-    margin-bottom: 25px;
-    font-family: 'Lato', sans-serif;
+h1 {
+  font-size: medium;
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: "Lato", sans-serif;
 }
 
-h2{
-    text-align: center;
-    font-family: 'Lato', sans-serif;
+h2 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
 }
 
-.card{
-    width: 100%;
+.card {
+  width: 100%;
 }
 
-.card_main{
-    display: flex;
-    justify-content: space-evenly;
-    /* margin-bottom: 5%; */
-    flex-wrap: wrap;
+.card_main {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-bottom: 5%; */
+  flex-wrap: wrap;
 }
 
-.card_inner{
-    flex: 1 1 200px;
-    margin: 40px;
-    /* width:  20%; */
-    height: 200px;
-    /* padding: 40px; */
-    background: #ecf0f3;
-    box-shadow: 13px 13px 20px #cbced1,
-                -13px -13px 20px #ffffff;
-    transition-duration: 0.5s;            
+.card_inner {
+  flex-basis: 30%;
+  /* width:  20%; */
+  height: 200px;
+  margin: 20px;
+  background: #ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+  transition-duration: 0.3s;
 }
 
 .card_inner:hover{
-     width:  100px;
-    height: 210px;
-    padding: 40px;
+    background: #e1effa;
 }
 
-.card_name{
-    text-align: center;
-    margin-top: 10px;
+.card_name {
+  text-align: center;
+  margin-top: 10px;
 }
 
-span{
-    font-size: 10px;
-    font-weight: 500;
-    font-family: 'Lato', sans-serif;
+span {
+  font-size: 10px;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
 }
 
-.carda_total{
-    font-size: 25px;
-    margin-top: 17%;
-    text-align: center;
-    align-items: center;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 1px;
+.carda_total {
+  font-size: 25px;
+  margin-top: 17%;
+  text-align: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+
+@media(max-width: 768px){
+
+    h1 {
+        font-size: small ;
+        text-align: center;
+        margin-bottom: 25px;
+        font-family: "Lato", sans-serif;
+      }
+
+      h2 {
+        font-size: 15px;  
+        font-weight: bold;
+        text-align: center;
+        font-family: "Lato", sans-serif;
+      }
+
+    .card_inner{
+        flex-basis: 70%;
+    }
+    .card_inner:hover{
+        flex-basis: 73%;
+    }
 }
