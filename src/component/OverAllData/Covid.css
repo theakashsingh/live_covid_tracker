@@ -114,6 +114,10 @@ span {
 
 @media(max-width: 768px){
 
+  .live{
+    margin-left: 40%;
+  }
+
    .live h1 {
         font-size: small ;
         text-align: center;
