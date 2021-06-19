@@ -23,8 +23,11 @@ const Covid = () => {
 
     return (
         <>
-        
-          <h1>🔴 LIVE</h1> 
+        <div className='live'>
+          <div className="animate"><span>🔴</span></div> 
+          <h1>Live</h1>
+         </div>  
+           
           <h2>COVID-19 CORONAVIRUS TRACKER</h2> 
             <div className="card">
 
